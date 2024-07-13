@@ -20,7 +20,9 @@ body {
 
 .display {
     grid-column: span 4; /* Take up the entire top row */
-    background-color: lightgray;
+    background-color: rgb(41, 41, 41);
+    border-radius: 5px;
+    color: white;
     text-align: right;
     padding: 10px;
     font-size: 1.5rem;
@@ -45,11 +47,13 @@ button:active {
 }
 
 button.clear {
-    grid-column: span 3; /* Take up 2/3 of the row */
+    grid-column: span 3; /* Take up 3/4 of the row */
+    background-color: darkgray;
 }
 
 button.divide {
-    grid-column: span 1; /* Take up 1/3 of the row */
+    grid-column: span 1; /* Take up 1/4 of the row */
+    background-color: orange;
 }
 
 button.zero {
@@ -57,5 +61,18 @@ button.zero {
 }
 
 button.operator.evaluate {
-    grid-column: span 1; /* Make the equals button take up half the width */
+    grid-column: span 1;
+    background-color: orange;
+}
+
+button.subtract {
+    background-color: orange;
+}
+
+button.add {
+    background-color: orange;
+}
+
+button.multiply {
+    background-color: orange;
 }
